@@ -1,15 +1,17 @@
 # Laboratoire #1
-## 4W4-Conception d'interfaces et développement web
-### Auteur : Antoine Chamberland
+## 4W4-Conception d'interfaces et développement Web
+### Auteur : Eddy Martin
 
-####    Objectifs
-- Installer Wordpress localment
+#### Objectifs
+- Installer Wordpress localement
 - Réaliser une première version d'un thème
 
 #### Liens de référence
-- Site du prof sur site ground   
+- Site du prof sur **siteground**
     - https://eddytuto.sg-host.com/
-- Github //*eddytuto*//
-    - https://github.com/eddytuto- https://fr.wordpress.org
-- Pour visualiser sur VC installer Markdown Preview Enhanced- Pour activer `ctrl-shift-v`
-- htpps://developer.wordpress.org/themes/basics/
+- Github **eddytuto**    
+- https://github.com/eddytuto
+- https://fr.wordpress.org/
+- Pour visualise sur VC installer  « Markdown preview »
+- Pour activer `ctrl-shift-v`
+- https://developer.wordpress.org/themes/basics/
