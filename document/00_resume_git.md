@@ -10,14 +10,14 @@
     - après avoir fait un commit le dépôt est clair
 - git **add --all** ou **git add  .**
 - git **commit -m "s2c1 on décrit les modification"**
-- git log
-- git log --oneline
-- git remote add 4w4 https://github.com/.....git
-- git branch -m main  (change le nom de la branche master pour main)
-- git branch lab1 (créer la branche «lab1» )
-- git checkout lab1 (pour changer de branche vers «lab1»)
-- git log --oneline (les branches lab1 et main pointe vers le même commit)
-- git chechout main
+- **git log**
+- **git log --oneline**
+- **git remote add 4w4 https://github.com/eddytuto/2023-4w4-gr1.git** (créer un alias qui pointe vers votre dépôt github)
+- **git branch -m main**  (change le nom de la branche master pour main)
+- **git branch lab1** (créer la branche «lab1» )
+- **git checkout lab1** (pour changer de branche vers «lab1»)
+- **git log --oneline** (les branches lab1 et main pointe vers le même commit)
+- **git chechout main** (pour activer la branche « main »)
 - git push 4w4 main (pousse la branche active «main» vers github dans le dépôt 4w4 vers la branche main)
 - git checkout lab1
 - git push 4w4 lab1
