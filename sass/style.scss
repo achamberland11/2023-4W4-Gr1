@@ -25,3 +25,38 @@ Text Domain: 4W4 Antoine Chamberland
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
+
+
+body{
+    background-color: #333;
+    color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .articles{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: justify;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    background-color: darkgray;
+    color: #333;
+    padding: 1rem;
+}
+
+main .articles article {
+    border-bottom: 1px solid #333;
+}
+
+main .articles a {
+    text-align: center;
+    color: darkslategray;
+}

@@ -32,12 +32,6 @@ html {
  */
 body {
   margin: 0;
-  background-color: #333;
-  color: antiquewhite;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 /**
@@ -54,7 +48,6 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Grouping content
@@ -380,10 +373,62 @@ p {
 }
 
 /* --------------------------------------------- composant */
+header h1, header h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .site__titre {
   text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .site__titre h1 {
   font-size: clamp(1rem, 0.2869rem + 2.4545vw, 4.375rem);
+}
+
+/* ////////////////////////////// Menu entete */
+.menu__entete .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu__entete .menu .menu-item a {
+  padding: 3px 8px;
+}
+
+body {
+  background-color: #333;
+  color: antiquewhite;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main .articles {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: justify;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 5rem;
+  background-color: darkgray;
+  color: #333;
+  padding: 1rem;
+}
+
+main .articles article {
+  border-bottom: 1px solid #333;
+}
+
+main .articles a {
+  text-align: center;
+  color: darkslategray;
 }
