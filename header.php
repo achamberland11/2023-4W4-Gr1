@@ -8,3 +8,13 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    <header class="site_entete">
+        <?php wp_nav_menu(array(
+            "menu" => "entete",
+            "container" => "nav",
+            "container_class" => "menu__entete"
+        )); ?>
+        <?php the_custom_logo() ?>
+        <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
+        <h2><?= bloginfo('description'); ?></h2>
+    </header>

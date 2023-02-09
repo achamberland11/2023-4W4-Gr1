@@ -1,6 +1,6 @@
 # Laboratoire #1
 ## 4W4-Conception d'interfaces et développement Web
-### Auteur : Eddy Martin
+### Auteur : Antoine Chamberland
 
 #### Objectifs
 - Installer Wordpress localement

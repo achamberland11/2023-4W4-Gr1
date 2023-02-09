@@ -1,0 +1,89 @@
+/*
+Theme Name: 4W4 Antoine Chamberland
+Theme URI: https://github.com/achamberland11/2023-4W4-Gr1
+Author: Antoine Chamberland
+Author URI: https://github.com/achamberland11
+Description: Thème réalisé dans le cours 4W4
+Version: 0.0.1
+Requires at least: 6.0
+Tested up to: 6.1.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4W4 Antoine Chamberland
+*/
+
+@import "variable/dimension";
+@import "normalize/normalize";
+//@import "normalize/box-sizing";
+
+/* --------------------------------------------- base */
+@import "base/heading";
+// @import "base/espacement";
+// @import "base/lien";
+// @import "base/list";
+
+/* --------------------------------------------- composant */
+@import "composant/entete";
+
+
+body{
+    background-color: #333;
+    color: antiquewhite;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .articles{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: justify;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    background-color: darkgray;
+    color: #333;
+    padding: 1rem;
+}
+
+main .articles article {
+    border-bottom: 1px solid #333;
+}
+
+main .articles a {
+    text-align: center;
+    text-decoration: none;
+    color: darkslategray;
+    transition: scale 0.12s;
+}
+article a h3:hover {
+    scale: 1.05;
+    text-decoration: underline aliceblue;
+    color: aliceblue;
+}
+
+
+////////////////// Logo
+.custom-logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-logo-link img {
+    border-radius: 45%;
+    box-shadow: 1px 1px 12px #000;
+    transition: box-shadow 0.5s, scale 0.25s;
+}
+
+.custom-logo-link img:hover {
+    scale: 1.1;
+    box-shadow: 1px 1px 30px rgb(156, 156, 156);
+}
+
+//////////////////////////
