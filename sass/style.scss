@@ -58,5 +58,32 @@ main .articles article {
 
 main .articles a {
     text-align: center;
+    text-decoration: none;
     color: darkslategray;
+    transition: scale 0.12s;
 }
+article a h3:hover {
+    scale: 1.05;
+    text-decoration: underline aliceblue;
+    color: aliceblue;
+}
+
+
+////////////////// Logo
+.custom-logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-logo-link img {
+    border-radius: 45%;
+    box-shadow: 1px 1px 12px #000;
+    transition: box-shadow 0.5s, scale 0.25s;
+}
+
+.custom-logo-link img:hover {
+    scale: 1.1;
+    box-shadow: 1px 1px 30px rgb(156, 156, 156);
+}
+
+//////////////////////////
