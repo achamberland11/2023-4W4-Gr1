@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*
-Theme Name: 4w4 Eddy martin
-Theme URI: https://github.com/eddytuto/2023-4w4-gr1
-Author: Eddy Martin
-Version: 1.0.0
-Author URI: https://eddytuto.sg-host.com/
+Theme Name: 4W4 Antoine Chamberland
+Theme URI: https://github.com/achamberland11/2023-4W4-Gr1
+Author: Antoine Chamberland
+Author URI: https://github.com/achamberland11
 Description: Thème réalisé dans le cours 4W4
+Version: 0.0.1
 Requires at least: 6.0
 Tested up to: 6.1.1
 Requires PHP: 7.0
@@ -381,12 +381,12 @@ header h1, header h2 {
 }
 
 .site__titre {
-  text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.site__titre h1 {
   font-size: clamp(1rem, 0.2869rem + 2.4545vw, 4.375rem);
+}
+.site__titre a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* ////////////////////////////// Menu entete */
@@ -406,6 +406,18 @@ header h1, header h2 {
   scale: 1.15;
   text-decoration: underline aliceblue;
   text-shadow: 0px 0px 10px aliceblue;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #aaa;
 }
 
 body {
