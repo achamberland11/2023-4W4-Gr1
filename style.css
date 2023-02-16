@@ -372,6 +372,37 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+ul, ol {
+  margin: 1rem 0rem;
+}
+@media screen and (min-width: 700px) {
+  ul, ol {
+    margin: 1rem 0.5rem;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 400px) {
+  ul, ol {
+    margin: 1rem 0.5rem;
+    padding: 15px;
+  }
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul li, ol li {
+  margin: 0.5rem 0rem;
+}
+
+pre {
+  background-color: #000;
+  color: #eee;
+  overflow-x: scroll;
+  text-align: left;
+}
+
 /* --------------------------------------------- composant */
 header h1, header h2 {
   display: flex;
