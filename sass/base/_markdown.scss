@@ -15,6 +15,14 @@ ul{
 
 }
 
+ul li::before {
+    content: "-";
+    background: crimson;
+    border-radius: .5rem;
+    padding-inline: .3rem;
+    margin-inline-end: .3rem;
+}
+
 ul li, ol li {
     margin: 0.5rem 0rem;
 }
