@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
     <main>
-        <pre>front-page.php</pre>
+        <pre>index.php</pre>
         <h1>Bienvenue sur 4W4</h1>
         <div class="articles">
             <?php if(have_posts()):

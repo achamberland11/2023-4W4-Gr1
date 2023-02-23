@@ -10,6 +10,7 @@
 <body>
     <header class="site_entete">
         <section class="entete-nav">
+                <?= get_search_form(); ?>
                 <?php wp_nav_menu(array(
                     "menu" => "entete",
                     "container" => "nav",
