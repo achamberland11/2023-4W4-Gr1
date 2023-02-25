@@ -47,3 +47,20 @@ header h1, header h2 {
         }
     }
 }
+
+////////////////// Logo
+.custom-logo-link {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-logo-link img {
+    border-radius: 45%;
+    box-shadow: 1px 1px 12px #000;
+    transition: box-shadow 0.5s, scale 0.25s;
+}
+
+.custom-logo-link img:hover {
+    scale: 1.1;
+    box-shadow: 1px 1px 30px rgb(156, 156, 156);
+}
