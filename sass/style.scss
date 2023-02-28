@@ -29,45 +29,5 @@ Text Domain: 4W4 Antoine Chamberland
 @import "composant/blocflex";
 @import "composant/recherche";
 
-
-body{
-    background-color: #333;
-    color: antiquewhite;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-main .articles{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: justify;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 5rem;
-    background-color: darkgray;
-    color: #333;
-    padding: 1rem;
-}
-
-main .articles article {
-    border-bottom: 1px solid #333;
-}
-
-main .articles a {
-    text-align: center;
-    text-decoration: none;
-    color: darkslategray;
-    transition: scale 0.12s;
-}
-article a h3:hover {
-    scale: 1.05;
-    text-decoration: underline aliceblue;
-    color: aliceblue;
-}
-//////////////////////////
+/* --------------------------------------------- layout */
+@import "layout/aside-contenu";
