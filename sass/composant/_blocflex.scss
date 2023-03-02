@@ -2,20 +2,18 @@ pre {
     display: none;
 }
 
-.blocflex{
-    display: flex;
+.blocflex {
+    display : flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    flex-wrap : wrap;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
-    article{
-        flex: 1 0 250px;
-        padding: 12px;
-        margin: 10px;
-        border: 3px solid #aaa;
-        color: aliceblue;
-        background-color: #202124;
+    article {
+        flex : 1 0 250px;
+        padding : 15px;
+        margin : 10px;
+        border : 0.35rem solid aliceblue;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.699);
         transition: transform 0.1s linear;
     }
@@ -27,7 +25,7 @@ pre {
 
 @media screen and (min-width: 1100px) {
     .blocflex{
-        margin-left: 25rem;
-        margin-right: 25rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }

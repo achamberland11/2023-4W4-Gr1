@@ -1,21 +1,21 @@
 /*
-Theme Name: 4W4 Antoine Chamberland
-Theme URI: https://github.com/achamberland11/2023-4W4-Gr1
-Author: Antoine Chamberland
-Author URI: https://github.com/achamberland11
+Theme Name: 4w4-gr1 Eddy martin
+Theme URI: https://github.com/eddytuto/2023-4w4-gr1
+Author: Eddy Martin
+Version: 1.0.0
+Author URI: https://eddytuto.sg-host.com/
 Description: Thème réalisé dans le cours 4W4
-Version: 0.0.1
 Requires at least: 6.0
 Tested up to: 6.1.1
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4W4 Antoine Chamberland
+Text Domain: 4w4-gr1-Eddy-martin
 */
 
 @import "variable/dimension";
 @import "normalize/normalize";
-//@import "normalize/box-sizing";
+// @import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
 @import "base/heading";
@@ -25,9 +25,9 @@ Text Domain: 4W4 Antoine Chamberland
 // @import "base/list";
 
 /* --------------------------------------------- composant */
-@import "composant/entete";
-@import "composant/blocflex";
-@import "composant/recherche";
+ @import "composant/entete";
+ @import "composant/blocflex";
+ @import "composant/recherche";
 
-/* --------------------------------------------- layout */
-@import "layout/aside-contenu";
+ /* --------------------------------------------- layout */
+ @import "layout/aside-contenu";

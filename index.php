@@ -5,22 +5,21 @@
 ?>
 
 <?php get_header(); ?>
-    <main class="site__main">
-        <pre>index.php</pre>
+    <main>
+        <pre>index.php.php</pre>
         <h1>Bienvenue sur 4W4</h1>
-        <div class="articles">
-            <?php if(have_posts()):
-                while(have_posts()): the_post(); ?>
+        <?php 
+        if (have_posts()):
+            while(have_posts()):
+                the_post();  // extrait un objet «post» ?>
                 <article>
-                    <a href="<?php the_permalink(); ?>"><h3><?php the_title('<h3>', '<h3>'); ?></h3></a>
-                    <?php the_excerpt(); ?>
-                    <?php the_permalink(); ?>
+                    <h3><?php the_title();  // affiche le titre du post ?></h3>
+                    <h6>Extrait:</h6><?php the_excerpt(); ?>
+                    <h6>Le contenu:</h6><?php the_content(); ?>
                 </article>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        </div>           
+            <?php endwhile; ?>
+        <?php endif; ?>
+        
     </main>
     
     <?php get_footer(); ?>
-</body>
-</html>

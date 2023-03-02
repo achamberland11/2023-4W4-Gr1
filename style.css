@@ -1,17 +1,17 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 Antoine Chamberland
-Theme URI: https://github.com/achamberland11/2023-4W4-Gr1
-Author: Antoine Chamberland
-Author URI: https://github.com/achamberland11
+Theme Name: 4w4-gr1 Eddy martin
+Theme URI: https://github.com/eddytuto/2023-4w4-gr1
+Author: Eddy Martin
+Version: 1.0.0
+Author URI: https://eddytuto.sg-host.com/
 Description: Thème réalisé dans le cours 4W4
-Version: 0.0.1
 Requires at least: 6.0
 Tested up to: 6.1.1
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4W4 Antoine Chamberland
+Text Domain: 4w4-gr1-Eddy-martin
 */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -374,17 +374,20 @@ p {
 
 ul, ol {
   margin: 1rem 0rem;
+  padding: 7px;
+  color: #444;
+  list-style-type: none;
 }
 @media screen and (min-width: 700px) {
   ul, ol {
     margin: 1rem 0.5rem;
-    padding: 10px;
+    padding: 0 13px;
   }
 }
 @media screen and (min-width: 400px) {
   ul, ol {
     margin: 1rem 0.5rem;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 
@@ -392,20 +395,30 @@ ul {
   list-style-type: square;
 }
 
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
 ul li::before {
   content: "-";
   background: crimson;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   padding-inline: 0.3rem;
   margin-inline-end: 0.3rem;
+  width: 1rem;
+  height: 1rem;
 }
-
-ul li, ol li {
+ul li::before ul li li::before {
+  background: transparent;
+  content: ".";
+}
+ul li::before ul li, ul li::before ol li {
   margin: 0.5rem 0rem;
 }
 
 pre {
-  background-color: #000;
+  background-color: #555;
   color: #eee;
   overflow-x: scroll;
   text-align: left;
@@ -419,6 +432,12 @@ header h1, header h2 {
   text-align: center;
 }
 
+.entete__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site__titre {
   font-size: clamp(1rem, 0.2869rem + 2.4545vw, 4.375rem);
 }
@@ -428,7 +447,7 @@ header h1, header h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* ////////////////////////////// Menu entete */
+/* ///////////////////////////////// menu__entete */
 .menu__entete .menu {
   display: flex;
   list-style-type: none;
@@ -448,7 +467,7 @@ header h1, header h2 {
 }
 .menu__entete .menu .menu-item::before {
   content: "";
-  background-color: transparent;
+  background: transparent;
   border-radius: 0;
   padding-inline: 0;
   margin-inline-end: 0;
@@ -478,16 +497,14 @@ pre {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .blocflex article {
   flex: 1 0 250px;
-  padding: 12px;
+  padding: 15px;
   margin: 10px;
-  border: 3px solid #aaa;
-  color: aliceblue;
-  background-color: #202124;
+  border: 0.35rem solid aliceblue;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.699);
   transition: transform 0.1s linear;
 }
@@ -497,13 +514,13 @@ pre {
 
 @media screen and (min-width: 1100px) {
   .blocflex {
-    margin-left: 25rem;
-    margin-right: 25rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 /* --------------------------------------------- layout */
-/*
-Mise en page générale avec display grid
+/**
+Mise en page générale avec display:grid
 
 */
 .site {
@@ -511,6 +528,7 @@ Mise en page générale avec display grid
   grid-template-areas: "header" "aside" "main" "footer";
   row-gap: 50px;
   color: antiquewhite;
+  background-color: #262626;
 }
 @media screen and (min-width: 1000px) {
   .site {
@@ -522,7 +540,7 @@ Mise en page générale avec display grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: #333;
+  background-color: #292f33;
 }
 
 .site__main {
@@ -532,51 +550,43 @@ Mise en page générale avec display grid
 
 .site__footer {
   grid-area: footer;
-  background-color: black;
+  background-color: #202124;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: aliceblue;
-}
-
-/*body{
-    background-color: #333;
-    color: antiquewhite;
+  background-color: #292f33;
+  color: antiquewhite;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-main .articles{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: justify;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 5rem;
-    background-color: darkgray;
-    color: #333;
-    padding: 1rem;
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
 }
-
-main .articles article {
-    border-bottom: 1px solid #333;
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }
 
 main .articles a {
-    text-align: center;
-    text-decoration: none;
-    color: darkslategray;
-    transition: scale 0.12s;
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  transition: scale 0.12s;
 }
+
 article a h3:hover {
-    scale: 1.05;
-    text-decoration: underline aliceblue;
-    color: aliceblue;
-}*/
+  scale: 1.05;
+  text-decoration: underline aliceblue;
+  color: aliceblue;
+}

@@ -10,7 +10,7 @@
 #### Liens de référence
 - Site du prof sur **siteground**
     - https://eddytuto.sg-host.com/
-- Github **eddytuto**    
+- Github **eddytuto**
 - https://github.com/eddytuto
 - Mon site sur **siteground**
     - https://cidweb27.sg-host.com/
