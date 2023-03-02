@@ -436,6 +436,7 @@ header h1, header h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: flex-start;
 }
 
 .site__titre {
@@ -500,7 +501,8 @@ pre {
   margin-left: 5rem;
   margin-right: 5rem;
 }
-.blocflex article {
+
+.blocflex__article {
   flex: 1 0 250px;
   padding: 15px;
   margin: 10px;
@@ -508,8 +510,13 @@ pre {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.699);
   transition: transform 0.1s linear;
 }
-.blocflex article:hover {
+
+.blocflex__article:hover {
   transform: scale(1.1);
+}
+
+.blocflex__galerie {
+  flex: 1 0 100%;
 }
 
 @media screen and (min-width: 1100px) {
