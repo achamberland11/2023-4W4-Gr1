@@ -42,9 +42,28 @@ function cidweb_modifie_requete_principal( $query ) {
                 && $query->is_main_query() // si requête principale
                 && ! is_admin() ) { // si pas dans le tableau de bord
           // $query->set permet de modifier la requête principale               
-          $query->set( 'category_name', 'note-4w4' ); // filtre les articles de categorie «4w4» slug
+          $query->set( 'category_name', '4w4' ); // filtre les articles de categorie «4w4» slug
           $query->set( 'orderby', 'title' ); // trier selon le champ title
           $query->set( 'order', 'ASC' ); // trier en ordre ascendant
           }
          }
          add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+         
+
+/**
+ * Permet de personnalisé chacun des titre du menu cours
+ * @param $title : titre du menu à modifier
+ *         $item : la structure «li» du menu
+ *         $args : objet décrivant l'ensemble des menu de notre site
+ *         $depth : Niveau de profondeur du menu (on a retirer ici)     
+ */
+
+function perso_menu_item_title($title, $item, $args) {
+        // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+        if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
+        // Modifier la longueur du titre en fonction de nos besoins
+        $title = wp_trim_words($title, 3, ' ... '); // A modifier am.liorer pour le tp1
+        }
+        return $title;
+        }
+        add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);         

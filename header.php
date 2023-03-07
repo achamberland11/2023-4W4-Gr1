@@ -8,7 +8,14 @@
     
     <?php wp_head(); ?>
 </head>
-<body class="site">
+<?php
+$nouvel_class = "";
+    if(is_front_page()){
+        $nouvel_class = "no-aside";
+    }
+?>
+
+<body class="site <?= $nouvel_class ?>">
     <header class="site__entete">
         <section class="entete__nav">
             <?= get_search_form(); ?>
@@ -23,22 +30,10 @@
         <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
-<aside class="site__aside">
-    <h3>Menu secondaire</h3>
 
-    <?php 
-        $category = get_queried_object();
-        if (isset($category)){
-            $menu = $category->slug;  
-        }
-        else {
-            $menu = "note-4w4";
-        }
-      
-        echo $menu;
-        wp_nav_menu(array(
-        "menu"=>$menu,
-        "container"=>"nav"
-    )) ?>
-</aside>
+<?php 
+if(! is_front_page()){
+    get_template_part("template-parts/aside");
+}
+?>
    
