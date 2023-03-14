@@ -14,7 +14,7 @@ Mise en page générale avec display:grid
     color: antiquewhite;
     background-color: #262626;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $largeur__bureau) {
         grid-template-columns: 20% auto;
         grid-template-areas:
         "header header"
@@ -50,6 +50,7 @@ Mise en page générale avec display:grid
     // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: #292f33;
     color: antiquewhite;
+    padding-left: 1rem;
 }
 
 main {
@@ -68,7 +69,7 @@ main {
       "main"
       "footer";
     //row-gap: 50px;
-    @media screen and (min-width:1000px) {
+    @media screen and (min-width:$largeur__bureau) {
         grid-template-columns: 20% auto; 
         grid-template-areas:
         "header header"
@@ -82,13 +83,13 @@ main {
     "header"
     "main"
     "footer";
-    @media screen and (min-width:1000px) {
+    @media screen and (min-width:$largeur__bureau) {
         grid-template-columns: auto; 
         grid-template-areas:
         "header"
         "main"
         "footer";
-        }
+    }
   }
 
 main .articles a {

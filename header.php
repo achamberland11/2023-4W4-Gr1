@@ -23,8 +23,7 @@ $nouvel_class = "";
                             "menu" => "entete",
                             "container" => "nav",
                             "container_class" => "menu__entete"
-
-                        )); ?>
+            )); ?>
         </section>
         <?php the_custom_logo(); ?> 
         <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>

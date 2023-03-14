@@ -22,7 +22,7 @@
       // sur la nouvelle requête contenu dans $query
         if ( $query->have_posts() ) :
             while ( $query->have_posts() ) : $query->the_post();
-                get_template_part("template-parts/categories", $category->slug);
+                get_template_part("template-parts/categorie", $category->slug);
             endwhile; ?>
         <?php endif;
       wp_reset_postdata();?>
