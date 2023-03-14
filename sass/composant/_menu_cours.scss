@@ -1,0 +1,45 @@
+.menu-cours-container {
+    display: flex;
+    justify-content: center;
+
+    @media screen and(min-width: $largeur__bureau) {
+        justify-content: flex-start;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+
+        @media screen and(min-width: $largeur__bureau) {
+            display: block;
+        }
+
+        .menu-item{
+            padding: 1rem;
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                @media screen and(min-width: $largeur__bureau) {
+                    flex-direction: column;
+                }
+
+                code{
+
+                }
+
+                p{
+                    display: none;
+                    
+                    @media screen and(min-width: $largeur__bureau) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

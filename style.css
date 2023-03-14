@@ -378,13 +378,13 @@ ul, ol {
   color: #444;
   list-style-type: none;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   ul, ol {
     margin: 1rem 0.5rem;
     padding: 0 13px;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 700px) {
   ul, ol {
     margin: 1rem 0.5rem;
     padding: 0 15px;
@@ -425,6 +425,10 @@ pre {
 }
 
 /* --------------------------------------------- composant */
+html {
+  overflow-x: hidden;
+}
+
 header h1, header h2 {
   display: flex;
   flex-direction: column;
@@ -439,6 +443,13 @@ header h1, header h2 {
   align-content: flex-start;
 }
 
+.nav-menu {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .site__titre {
   font-size: clamp(1rem, 0.2869rem + 2.4545vw, 4.375rem);
 }
@@ -449,16 +460,31 @@ header h1, header h2 {
 }
 
 /* ///////////////////////////////// menu__entete */
+.menu__entete {
+  transition: transform 0.5s;
+  transform: translateX(300px);
+}
+@media screen and (min-width: 700px) {
+  .menu__entete {
+    display: block;
+    transform: translateX(0px);
+  }
+}
 .menu__entete .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
 }
 .menu__entete .menu .menu-item a {
-  padding: 3px 8px;
+  padding: none;
   color: antiquewhite;
   text-decoration: none;
   transition: scale 0.15s, text-shadow 0.15s;
+}
+@media screen and (min-width: 700px) {
+  .menu__entete .menu .menu-item a {
+    padding: 3px 8px;
+  }
 }
 .menu__entete .menu .menu-item a:hover {
   color: aliceblue;
@@ -470,8 +496,12 @@ header h1, header h2 {
   content: "";
   background: transparent;
   border-radius: 0;
-  padding-inline: 0;
-  margin-inline-end: 0;
+}
+@media screen and (min-width: 700px) {
+  .menu__entete .menu .menu-item::before {
+    padding-inline: 0;
+    margin-inline-end: 0;
+  }
 }
 
 .custom-logo-link {
@@ -490,6 +520,25 @@ header h1, header h2 {
   box-shadow: 1px 1px 30px rgb(156, 156, 156);
 }
 
+/* -------------------------------------------------------------Bouton burger */
+.burger {
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 700px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkBurger {
+  display: none;
+}
+
+#chkBurger:checked ~ .menu__entete {
+  display: block;
+  transform: translateX(0);
+}
+
 pre {
   display: none;
 }
@@ -498,10 +547,20 @@ pre {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .blocflex {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .blocflex {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
 }
 
 .blocflex__article {
@@ -521,12 +580,91 @@ pre {
   flex: 1 0 100%;
 }
 
-@media screen and (min-width: 1100px) {
-  .blocflex {
-    margin-left: 5rem;
-    margin-right: 5rem;
+.menu-cours-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container {
+    justify-content: flex-start;
   }
 }
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    display: block;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  padding: 1rem;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
+}
+
+.menu-4w4-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu-4w4-container {
+    justify-content: flex-start;
+  }
+}
+.menu-4w4-container .menu {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1000px) {
+  .menu-4w4-container .menu {
+    display: block;
+  }
+}
+.menu-4w4-container .menu .menu-item {
+  padding: 1rem;
+}
+.menu-4w4-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-4w4-container .menu .menu-item a {
+    flex-direction: column;
+  }
+}
+.menu-4w4-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-4w4-container .menu .menu-item a p {
+    display: block;
+  }
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
