@@ -59,14 +59,22 @@ function cidweb_modifie_requete_principal( $query ) {
  */
 
 function perso_menu_item_title($title, $item, $args) {
-        // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
-        if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
-        // Modifier la longueur du titre en fonction de nos besoins
-        $title = wp_trim_words($title, 3, ' ... '); // A modifier am.liorer pour le tp1
-        $sigle = substr($title, 4, 3);
-        $title = substr($title, 7);
-        $title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 2, ' ... ') . "</p>";
-        }
+         // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+         if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
+                // Modifier la longueur du titre en fonction de nos besoins
+                $title = wp_trim_words($title, 3, ' ... '); // A modifier améliorer pour le tp1
+                $sigle = substr($title, 4, 3);
+                $title = substr($title, 7);
+                $title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 1, '...') . "</p>";
+         }
+
+         // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+         if($args->menu == 'note-4w4') { // on filtre uniquement le menu «cours»
+                // Modifier la longueur du titre en fonction de nos besoins
+                $title = wp_trim_words(substr($title, 3)); // A modifier améliorer pour le tp1
+                $sigle = substr($title, 0);
+                $title = "<code>" .$sigle. "</code>";
+         }
         return $title;
         }
         add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

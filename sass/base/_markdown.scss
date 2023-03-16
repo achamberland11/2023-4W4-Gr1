@@ -1,7 +1,6 @@
 ul, ol {
   margin: 1rem 0rem;
   padding : 7px;
-  color : #444;
   list-style-type : none;
   @media screen and (min-width: $largeur__bureau) {
       margin : 1rem .5rem; 
@@ -13,10 +12,8 @@ ul, ol {
   }
 }
 
-
-
-ul {
-  list-style-type: square;
+article ul li {
+  font-size: 1.35rem;
 }
 
 ul li, 

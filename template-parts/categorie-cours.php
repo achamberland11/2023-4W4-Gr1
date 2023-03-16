@@ -9,9 +9,9 @@
     $duree = substr($titre, -5);
 ?>
 
-<article class="blocflex__article">
+<a href="<?php the_permalink(); ?>"><article class="blocflex__article">
     <h5 href="<?php the_permalink(); ?>"><?= $sigle ?></h5>
     <h6><?= $titre_long; ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15); ?></p>
     <h6><?= $duree; ?></h6>
-</article>
+</article></a>

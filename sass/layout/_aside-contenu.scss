@@ -10,7 +10,6 @@ Mise en page générale avec display:grid
       "aside"
       "main"
       "footer";
-    row-gap: 50px;
     color: antiquewhite;
     background-color: #262626;
 
@@ -49,7 +48,8 @@ Mise en page générale avec display:grid
     // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: #292f33;
     color: antiquewhite;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    width: 100%;
 }
 
 main {

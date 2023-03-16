@@ -375,7 +375,6 @@ p {
 ul, ol {
   margin: 1rem 0rem;
   padding: 7px;
-  color: #444;
   list-style-type: none;
 }
 @media screen and (min-width: 1000px) {
@@ -391,8 +390,8 @@ ul, ol {
   }
 }
 
-ul {
-  list-style-type: square;
+article ul li {
+  font-size: 1.35rem;
 }
 
 ul li,
@@ -566,13 +565,20 @@ pre {
   }
 }
 
-.blocflex__article {
+.blocflex > a {
+  color: antiquewhite;
+  text-decoration: none;
   flex: 1 0 250px;
-  padding: 15px;
-  margin: 10px;
+  padding: 10px;
+}
+
+.blocflex__article {
   border: 0.35rem solid aliceblue;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.699);
   transition: transform 0.1s linear;
+}
+.blocflex__article h5 {
+  text-transform: capitalize;
 }
 
 .blocflex__article:hover {
@@ -605,6 +611,12 @@ pre {
 .menu-cours-container .menu .menu-item {
   padding: 1rem;
 }
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item {
+    padding: 0.5rem;
+    padding-right: 0;
+  }
+}
 .menu-cours-container .menu .menu-item a {
   display: flex;
   flex-direction: row;
@@ -614,11 +626,12 @@ pre {
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .menu-cours-container .menu .menu-item a p {
   display: none;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a p {
@@ -637,7 +650,7 @@ pre {
 }
 .menu-4w4-container .menu {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
   flex-flow: wrap;
 }
 @media screen and (min-width: 1000px) {
@@ -647,6 +660,7 @@ pre {
 }
 .menu-4w4-container .menu .menu-item {
   padding: 1rem;
+  width: 8rem;
 }
 .menu-4w4-container .menu .menu-item a {
   display: flex;
@@ -677,7 +691,6 @@ Mise en page générale avec display:grid
 .site {
   display: grid;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
   color: antiquewhite;
   background-color: #262626;
 }
@@ -708,7 +721,8 @@ Mise en page générale avec display:grid
   grid-area: aside;
   background-color: #292f33;
   color: antiquewhite;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+  width: 100%;
 }
 
 main {

@@ -8,15 +8,17 @@
 
     .menu{
         display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
         flex-flow: wrap;
 
         @media screen and(min-width: $largeur__bureau) {
             display: block;
+    
         }
 
         .menu-item{
             padding: 1rem;
+            width: 8rem;
             a{
                 display: flex;
                 flex-direction: row;
