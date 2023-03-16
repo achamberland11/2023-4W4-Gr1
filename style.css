@@ -712,6 +712,25 @@ pre {
   }
 }
 
+.lien .custom-logo-link img {
+  border-radius: 45%;
+  box-shadow: 1px 1px 12px #000;
+  scale: 0.25;
+  transition: box-shadow 0.5s, scale 0.25s;
+}
+
+.lien .custom-logo-link img:hover {
+  scale: 0.3;
+  box-shadow: 1px 1px 30px rgb(156, 156, 156);
+}
+
+.lien {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
