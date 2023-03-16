@@ -16,7 +16,8 @@
         }
 
         .menu-item{
-            padding: 1rem;
+            border: 1px solid #aaa;
+            text-align: center;
 
             @media screen and(min-width: $largeur__bureau) {
                 padding: 0.5rem;

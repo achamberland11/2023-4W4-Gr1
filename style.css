@@ -390,6 +390,12 @@ ul, ol {
   }
 }
 
+article ul {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
 article ul li {
   font-size: 1.35rem;
 }
@@ -397,11 +403,9 @@ article ul li {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
-  border: 1px solid #aaa;
 }
 
 ul li::before {
-  border-radius: 50%;
   padding-inline: 0.3rem;
   margin-inline-end: 0.3rem;
   width: 1rem;
@@ -576,6 +580,7 @@ pre {
   border: 0.35rem solid aliceblue;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.699);
   transition: transform 0.1s linear;
+  height: 100%;
 }
 .blocflex__article h5 {
   text-transform: capitalize;
@@ -609,7 +614,8 @@ pre {
   }
 }
 .menu-cours-container .menu .menu-item {
-  padding: 1rem;
+  border: 1px solid #aaa;
+  text-align: center;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item {
@@ -659,8 +665,11 @@ pre {
   }
 }
 .menu-4w4-container .menu .menu-item {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 8rem;
+  border: 1px solid #aaa;
+  text-align: center;
+  margin-right: 1rem;
 }
 .menu-4w4-container .menu .menu-item a {
   display: flex;

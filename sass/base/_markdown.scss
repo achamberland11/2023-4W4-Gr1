@@ -12,6 +12,12 @@ ul, ol {
   }
 }
 
+article ul {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
 article ul li {
   font-size: 1.35rem;
 }
@@ -19,12 +25,10 @@ article ul li {
 ul li, 
 ol li {
     margin: .5rem 0rem;
-    border: 1px solid #aaa;
 }
 
 
 ul   li::before {
-  border-radius: 50%;
   padding-inline: .3rem;
   margin-inline-end: .3rem;
   width: 1rem;
