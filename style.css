@@ -419,6 +419,13 @@ ul li::before ul li, ul li::before ol li {
   margin: 0.5rem 0rem;
 }
 
+li:hover {
+  color: aliceblue;
+  scale: 1.15;
+  text-decoration: underline aliceblue;
+  text-shadow: 0px 0px 10px aliceblue;
+}
+
 a {
   color: #aaa;
 }
@@ -616,6 +623,7 @@ pre {
 .menu-cours-container .menu .menu-item {
   border: 1px solid #aaa;
   text-align: center;
+  margin: 0.25rem;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item {
@@ -624,11 +632,13 @@ pre {
   }
 }
 .menu-cours-container .menu .menu-item a {
+  color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a {
@@ -658,6 +668,7 @@ pre {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
+  padding: 0;
 }
 @media screen and (min-width: 1000px) {
   .menu-4w4-container .menu {
@@ -665,18 +676,27 @@ pre {
   }
 }
 .menu-4w4-container .menu .menu-item {
-  padding: 0.5rem;
+  padding: 0.25rem;
   width: 8rem;
   border: 1px solid #aaa;
+  margin: 0.25rem;
   text-align: center;
-  margin-right: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .menu-4w4-container .menu .menu-item {
+    padding: 0.5rem;
+    padding-right: 0;
+    margin-right: 1rem;
+  }
 }
 .menu-4w4-container .menu .menu-item a {
+  color: aliceblue;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 @media screen and (min-width: 1000px) {
   .menu-4w4-container .menu .menu-item a {
@@ -727,6 +747,7 @@ Mise en page générale avec display:grid
 }
 
 .site__aside {
+  text-transform: capitalize;
   grid-area: aside;
   background-color: #292f33;
   color: antiquewhite;

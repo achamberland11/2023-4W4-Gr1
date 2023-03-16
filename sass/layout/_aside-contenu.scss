@@ -44,6 +44,7 @@ Mise en page générale avec display:grid
 }
 
 .site__aside{
+    text-transform: capitalize;
     grid-area: aside;
     // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: #292f33;
