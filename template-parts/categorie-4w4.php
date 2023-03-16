@@ -4,6 +4,7 @@
      * qui s'intègre dans la liste des notes de 4w4 qu'on accède avec categorie/4w4
      */
     $titre = get_the_title();
+    
     // Retirer le premier du titre d'article de catégorie 
     if(substr($titre, 0, 1) == '0'){
 

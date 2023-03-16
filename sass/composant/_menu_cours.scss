@@ -9,7 +9,7 @@
     .menu{
         display: flex;
         flex-direction: row;
-        flex-flow: nowrap;
+        flex-flow: wrap;
 
         @media screen and(min-width: $largeur__bureau) {
             display: block;

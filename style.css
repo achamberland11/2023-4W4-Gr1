@@ -398,11 +398,10 @@ ul {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
+  border: 1px solid #aaa;
 }
 
 ul li::before {
-  content: "-";
-  background: crimson;
   border-radius: 50%;
   padding-inline: 0.3rem;
   margin-inline-end: 0.3rem;
@@ -415,6 +414,10 @@ ul li::before ul li li::before {
 }
 ul li::before ul li, ul li::before ol li {
   margin: 0.5rem 0rem;
+}
+
+a {
+  color: #aaa;
 }
 
 pre {
@@ -592,7 +595,7 @@ pre {
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
-  flex-flow: nowrap;
+  flex-flow: wrap;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu {
@@ -635,6 +638,7 @@ pre {
 .menu-4w4-container .menu {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
 @media screen and (min-width: 1000px) {
   .menu-4w4-container .menu {
