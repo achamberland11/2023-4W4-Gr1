@@ -419,13 +419,6 @@ ul li::before ul li, ul li::before ol li {
   margin: 0.5rem 0rem;
 }
 
-li:hover {
-  color: aliceblue;
-  scale: 1.15;
-  text-decoration: underline aliceblue;
-  text-shadow: 0px 0px 10px aliceblue;
-}
-
 a {
   color: #aaa;
 }
@@ -654,6 +647,12 @@ pre {
     display: block;
   }
 }
+.menu-cours-container .menu .menu-item a:hover {
+  color: aliceblue;
+  scale: 1.15;
+  text-decoration: underline aliceblue;
+  text-shadow: 0px 0px 10px aliceblue;
+}
 
 .menu-4w4-container {
   display: flex;
@@ -710,6 +709,12 @@ pre {
   .menu-4w4-container .menu .menu-item a p {
     display: block;
   }
+}
+.menu-4w4-container .menu .menu-item a:hover {
+  color: aliceblue;
+  scale: 1.15;
+  text-decoration: underline aliceblue;
+  text-shadow: 0px 0px 10px aliceblue;
 }
 
 .lien .custom-logo-link img {

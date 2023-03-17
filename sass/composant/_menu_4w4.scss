@@ -54,6 +54,13 @@
                         display: block;
                     }
                 }
+            }            
+
+            a:hover {
+                color: aliceblue;
+                scale: 1.15;
+                text-decoration: underline aliceblue;
+                text-shadow: 0px 0px 10px aliceblue;
             }
         }
     }
