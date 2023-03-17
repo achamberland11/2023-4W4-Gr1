@@ -749,6 +749,11 @@ pre {
 .menu__footer .menu {
   text-align: center;
 }
+.menu__footer a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 .menu__footer li {
   text-align: end;
   padding: none;
