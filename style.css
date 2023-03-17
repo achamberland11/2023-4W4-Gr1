@@ -739,13 +739,11 @@ pre {
 
 .menu__footer {
   transition: transform 0.5s;
-  transform: translateX(300px);
   color: antiquewhite;
 }
 @media screen and (min-width: 700px) {
   .menu__footer {
     display: block;
-    transform: translateX(0px);
   }
 }
 .menu__footer .menu {

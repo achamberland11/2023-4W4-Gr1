@@ -25,11 +25,9 @@
 
 .menu__footer{ // nav
     transition: transform .5s;
-    transform: translateX(300px);
     color: antiquewhite;
     @media screen and (min-width: $largeur__tablette) {
         display: block;
-        transform: translateX(0px);
     }
     .menu { // ul
         text-align: center;
