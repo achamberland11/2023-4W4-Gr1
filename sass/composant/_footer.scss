@@ -1,22 +1,66 @@
 ////////////////// Logo
-.site-footer {
+.site__footer {
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.lien .custom-logo-link img {
+.section__footer .custom-logo-link img {
     border-radius: 45%;
     box-shadow: 1px 1px 12px #000;
-    scale: 0.25;
+    scale: 0.5;
     transition: box-shadow 0.5s, scale 0.25s;
 }
 
-.lien .custom-logo-link img:hover {
-    scale: 0.3;
+.section__footer .custom-logo-link img:hover {
+    scale: 0.75;
     box-shadow: 1px 1px 30px rgb(156, 156, 156);
 }
 
-.lien {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
+.section__footer {
+
+}
+
+.menu__footer{ // nav
+    transition: transform .5s;
+    transform: translateX(300px);
+    @media screen and (min-width: $largeur__tablette) {
+        display: block;
+        transform: translateX(0px);
+    }
+    .menu { // ul
+        text-align: center;
+    }
+
+    li { // li
+
+
+        padding: none;
+        color: antiquewhite;
+        text-decoration: none;
+        transition: scale 0.15s, text-shadow 0.15s;
+
+        @media screen and (min-width: $largeur__tablette) {
+            padding : 3px 8px;
+
+        }
+    }
+    li:hover{
+        color: aliceblue;
+        scale: 1.15;
+        text-decoration: underline aliceblue;
+        text-shadow: 0px 0px 10px aliceblue;
+    }
+
+    .menu-item::before {
+        content: "";
+        background: transparent;
+        border-radius: 0;            
+        @media screen and (min-width: $largeur__tablette) {
+            padding-inline: 0;
+            margin-inline-end: 0;
+        }
+    }
 }
