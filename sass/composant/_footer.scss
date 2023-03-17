@@ -20,12 +20,13 @@
 }
 
 .section__footer {
-
+    
 }
 
 .menu__footer{ // nav
     transition: transform .5s;
     transform: translateX(300px);
+    color: antiquewhite;
     @media screen and (min-width: $largeur__tablette) {
         display: block;
         transform: translateX(0px);
@@ -35,10 +36,8 @@
     }
 
     li { // li
-
-
+        text-align: end;
         padding: none;
-        color: antiquewhite;
         text-decoration: none;
         transition: scale 0.15s, text-shadow 0.15s;
 
@@ -52,6 +51,10 @@
         scale: 1.15;
         text-decoration: underline aliceblue;
         text-shadow: 0px 0px 10px aliceblue;
+    }
+
+    ul li {
+        text-align: center;
     }
 
     .menu-item::before {
