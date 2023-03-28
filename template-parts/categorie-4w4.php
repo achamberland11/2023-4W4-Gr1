@@ -13,5 +13,10 @@
 
 <a href="<?php the_permalink(); ?>"><article class="blocflex__article">
     <h5><?= $titre ?></h5>
-    <p><?= wp_trim_words(get_the_excerpt(), 15); ?></p>
+    <p><?= wp_trim_words(get_the_excerpt(), 15, "..."); ?></p>
 </article></a>
+
+<?php
+    // the_excerpt() // Echo du résumé du post
+    // the_content() // Echo le contenu complet du post
+?>
