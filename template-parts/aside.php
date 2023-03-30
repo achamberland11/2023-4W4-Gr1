@@ -13,5 +13,6 @@
         wp_nav_menu(array(
         "menu"=>$menu,
         "container"=>"nav"
-    )) ?>
+      ))
+    ?>
 </aside>
