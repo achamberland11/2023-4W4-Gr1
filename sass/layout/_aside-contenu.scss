@@ -38,6 +38,10 @@ main {
     grid-area: main;
 }
 
+body .custom-background {
+    filter: grayscale(80%);
+}
+
 .site__footer{
     grid-area: footer;
     background-color: #202124;
