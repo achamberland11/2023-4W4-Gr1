@@ -783,6 +783,29 @@ pre {
   }
 }
 
+.recherche__404 .recherche {
+  background-color: #292f33;
+  color: antiquewhite;
+  font-size: 2.5rem;
+  padding: 0%;
+}
+.recherche__404 .recherche label, .recherche__404 .recherche input {
+  border-radius: 0%;
+  background-color: #292f33;
+  color: antiquewhite;
+  width: 30rem;
+  height: 5rem;
+  margin: 0;
+}
+.recherche__404 .recherche button {
+  border-radius: 0%;
+  background-color: #292f33;
+  color: antiquewhite;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+}
+
 #menu__404 {
   display: flex;
   flex-direction: column;

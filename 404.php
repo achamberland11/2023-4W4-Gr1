@@ -8,7 +8,7 @@
     <main class="site__main">
         <h1>Erreur 404</h1>
         <h2>Page introuvable, vous devez tenter une recherche</h2>
-        <div class="recherche-404"><?= get_search_form(); ?></div>
+        <div class="recherche__404"><?= get_search_form(); ?></div>
 
         <section id="menu__404">
             <section>
