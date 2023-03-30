@@ -16,7 +16,7 @@ $nouvel_class = "";
     }
 ?>
 
-<body class="site <?= $nouvel_class ?>">
+<body class="site <?= $nouvel_class ?> custom-background">
     <header class="site__entete">
         <section class="entete__nav">
             <?= get_search_form(); ?>

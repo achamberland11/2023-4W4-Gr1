@@ -2,53 +2,70 @@
     .recherche {
         background-color: #292f33;
         color: antiquewhite;
-        font-size: 2.5rem;
+        font-size: 2.5vmin;
         padding: 0%;
+        @media screen and (min-width: $largeur__bureau) {
+            font-size: 3.5vmin;
+        }
 
         label, input {
             border-radius: 0%;
             background-color: #292f33;
             color: antiquewhite;      
-            width: 30rem;
-            height: 5rem;
+            height: 3vh;
             margin: 0;
+            @media screen and (min-width: $largeur__bureau) {
+                width: 30vw;
+                height: 8vh;
+            }
         }
 
         button {
             border-radius: 0%;
             background-color: #292f33;
             color: antiquewhite;      
-            width: 5rem;
-            height: 5rem;
+            height: 3vh;
             margin: 0;
+            
+            @media screen and (min-width: $largeur__bureau) {
+                width: 5vw;
+                height: 8vh;
+            }
         }
     }
 }
 
-#menu__404 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rem;
+#page__404 {
+    background-color: transparent;
 
-    section {
+
+    #menu__404 {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 3rem;
-
-        .articles__404 {
-            display: flex;
-            flex-direction: row;
+        
+        section {
+            padding-top: 3rem;
             
-            .menu {
+            .articles__404 {
                 display: flex;
-                justify-content: center;
-
-                li {
-                    margin: 0.5rem;
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                    padding-bottom: 0.25rem;
-                    padding-top: 0.25rem;
+                flex-direction: row;
+                
+                .menu {
+                    display: flex;
+                    justify-content: center;
+                    
+                    li {
+                        margin: 0.5rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-bottom: 0.25rem;
+                        padding-top: 0.25rem;
+                        background-color: #292f33;
+                    }
                 }
             }
         }

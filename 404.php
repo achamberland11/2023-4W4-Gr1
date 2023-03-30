@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-    <main class="site__main">
+    <main class="site__main" id="page__404">
         <h1>Erreur 404</h1>
         <h2>Page introuvable, vous devez tenter une recherche</h2>
         <div class="recherche__404"><?= get_search_form(); ?></div>

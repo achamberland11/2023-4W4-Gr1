@@ -786,50 +786,70 @@ pre {
 .recherche__404 .recherche {
   background-color: #292f33;
   color: antiquewhite;
-  font-size: 2.5rem;
+  font-size: 2.5vmin;
   padding: 0%;
+}
+@media screen and (min-width: 1000px) {
+  .recherche__404 .recherche {
+    font-size: 3.5vmin;
+  }
 }
 .recherche__404 .recherche label, .recherche__404 .recherche input {
   border-radius: 0%;
   background-color: #292f33;
   color: antiquewhite;
-  width: 30rem;
-  height: 5rem;
+  height: 3vh;
   margin: 0;
+}
+@media screen and (min-width: 1000px) {
+  .recherche__404 .recherche label, .recherche__404 .recherche input {
+    width: 30vw;
+    height: 8vh;
+  }
 }
 .recherche__404 .recherche button {
   border-radius: 0%;
   background-color: #292f33;
   color: antiquewhite;
-  width: 5rem;
-  height: 5rem;
+  height: 3vh;
   margin: 0;
 }
+@media screen and (min-width: 1000px) {
+  .recherche__404 .recherche button {
+    width: 5vw;
+    height: 8vh;
+  }
+}
 
-#menu__404 {
+#page__404 {
+  background-color: transparent;
+}
+#page__404 #menu__404 {
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
 }
-#menu__404 section {
+#page__404 #menu__404 section {
   padding-top: 3rem;
 }
-#menu__404 section .articles__404 {
+#page__404 #menu__404 section .articles__404 {
   display: flex;
   flex-direction: row;
 }
-#menu__404 section .articles__404 .menu {
+#page__404 #menu__404 section .articles__404 .menu {
   display: flex;
   justify-content: center;
 }
-#menu__404 section .articles__404 .menu li {
+#page__404 #menu__404 section .articles__404 .menu li {
   margin: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
+  background-color: #292f33;
 }
 
 /* --------------------------------------------- layout */
