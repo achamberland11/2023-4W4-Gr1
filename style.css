@@ -462,46 +462,45 @@ header h1, header h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* ///////////////////////////////// menu__entete */
-.menu__entete {
+.site .menu__entete {
   transition: transform 0.5s;
   transform: translateX(300px);
 }
 @media screen and (min-width: 700px) {
-  .menu__entete {
+  .site .menu__entete {
     display: block;
     transform: translateX(0px);
   }
 }
-.menu__entete .menu {
+.site .menu__entete .menu {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
 }
-.menu__entete .menu .menu-item a {
+.site .menu__entete .menu .menu-item a {
   padding: none;
   color: antiquewhite;
   text-decoration: none;
   transition: scale 0.15s, text-shadow 0.15s;
 }
 @media screen and (min-width: 700px) {
-  .menu__entete .menu .menu-item a {
+  .site .menu__entete .menu .menu-item a {
     padding: 3px 8px;
   }
 }
-.menu__entete .menu .menu-item a:hover {
+.site .menu__entete .menu .menu-item a:hover {
   color: aliceblue;
   scale: 1.15;
   text-decoration: underline aliceblue;
   text-shadow: 0px 0px 10px aliceblue;
 }
-.menu__entete .menu .menu-item::before {
+.site .menu__entete .menu .menu-item::before {
   content: "";
   background: transparent;
   border-radius: 0;
 }
 @media screen and (min-width: 700px) {
-  .menu__entete .menu .menu-item::before {
+  .site .menu__entete .menu .menu-item::before {
     padding-inline: 0;
     margin-inline-end: 0;
   }
@@ -876,9 +875,12 @@ Mise en page générale avec display:grid
   background-color: #292f33;
 }
 
+main {
+  background-color: #333;
+}
+
 .site__main {
   grid-area: main;
-  background-color: #333;
 }
 
 .site__footer {
