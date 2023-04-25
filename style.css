@@ -852,6 +852,19 @@ pre {
   background-color: #292f33;
 }
 
+.menu-evenement-container {
+  background-color: crimson;
+}
+.menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid aliceblue;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
