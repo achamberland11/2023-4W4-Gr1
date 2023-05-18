@@ -853,22 +853,40 @@ pre {
 }
 
 .menu-evenement-container {
-  background-color: #333;
+  margin: auto auto;
   border: 2px solid crimson;
+  width: 40vw;
+  height: 40vh;
 }
 .menu-evenement-container .menu {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  margin: auto auto;
 }
 .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
+  border: 1px solid #aaa;
+  margin: 0.5rem;
 }
 .menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   color: crimson;
 }
-
-/* --------------------------------------------- layout */
+.menu-evenement-container .menu .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu-evenement-container .menu .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 40vw;
+  height: 40vh;
+} /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
 

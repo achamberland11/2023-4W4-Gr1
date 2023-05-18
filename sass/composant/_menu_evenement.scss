@@ -1,18 +1,41 @@
-.menu-evenement-container {
-    background-color: #333;
+.menu-evenement-container { //nav 
+    margin: auto auto;
     border: 2px solid crimson;
-    .menu{
-        display: flex;
-        justify-content: space-between;
+    width: 40vw;
+    height: 40vh;
 
-        .menu-item{
+    .menu { //ul 
+        display: block;
+        margin: auto auto;
+
+        .menu-item { //li 
             display: flex;
             flex-direction: column;
-            
-            a{
-                color: crimson;
-            }
-        }
+            border: 1px solid #aaa;
+            margin: 0.5rem;
 
-    }
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                color: crimson;
+
+                .title { 
+                    font-size: 1.5rem;
+                }
+
+                .description {
+                    font-size: .8rem; 
+                } 
+
+                .menu-thumbnail {
+                    display: block;
+                    width: 40vw;
+                    height: 40vh;
+                } 
+            } 
+        } 
+    } 
 }
