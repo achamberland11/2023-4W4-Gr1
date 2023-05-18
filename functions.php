@@ -45,7 +45,7 @@ function cidweb_modifie_requete_principal( $query ) {
                 && $query->is_main_query() // si requête principale
                 && ! is_admin() ) { // si pas dans le tableau de bord
           // $query->set permet de modifier la requête principale               
-          $query->set( 'category_name', '4w4' ); // filtre les articles de categorie «4w4» slug
+          $query->set( 'category_name', 'accueil' ); // filtre les articles de categorie «4w4» slug
           $query->set( 'orderby', 'title' ); // trier selon le champ title
           $query->set( 'order', 'ASC' ); // trier en ordre ascendant
           }
@@ -132,5 +132,3 @@ function perso_menu_item_title($title, $item, $args) {
         }
                         
         add_action( 'widgets_init', 'enregistrer_sidebar' );
-
-                        

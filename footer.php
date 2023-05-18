@@ -18,6 +18,19 @@
                 <a href="https://cidweb13.sg-host.com/" target="_blank"><li><img src="https://s2.svgbox.net/materialui.svg?ic=web&color=f0f8ff" width="32" height="32"></li></a>
             </ul>       
         </section>
+
+        <div>
+            <section class="footer__col"> 
+                <div class="sidebar">
+                    <?php dynamic_sidebar( 'footer_1' ); ?>
+                </div>
+            </section>   
+            <section class="footer__col"> 
+            <div class="sidebar">
+                <?php dynamic_sidebar( 'footer_2' ); ?>
+            </div>
+            </section>
+        </div>
     </footer>
     <?php wp_footer(); ?>
 
