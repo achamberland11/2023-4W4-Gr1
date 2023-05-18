@@ -1,8 +1,8 @@
 .menu-evenement-container { //nav 
     margin: auto auto;
     border: 2px solid crimson;
-    width: 40vw;
-    height: 40vh;
+    width: 25vw;
+    height: 35vh;
 
     .menu { //ul 
         display: block;
@@ -11,7 +11,9 @@
         .menu-item { //li 
             display: flex;
             flex-direction: column;
-            border: 1px solid #aaa;
+            border: 1px solid aliceblue;
+            width: 20vw;
+            height: 30vh;
             margin: 0.5rem;
 
             a {
@@ -32,8 +34,8 @@
 
                 .menu-thumbnail {
                     display: block;
-                    width: 40vw;
-                    height: 40vh;
+                    width: 20vw;
+                    height: 20vh;
                 } 
             } 
         } 

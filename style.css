@@ -855,8 +855,8 @@ pre {
 .menu-evenement-container {
   margin: auto auto;
   border: 2px solid crimson;
-  width: 40vw;
-  height: 40vh;
+  width: 25vw;
+  height: 35vh;
 }
 .menu-evenement-container .menu {
   display: block;
@@ -865,7 +865,9 @@ pre {
 .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
+  border: 1px solid aliceblue;
+  width: 20vw;
+  height: 30vh;
   margin: 0.5rem;
 }
 .menu-evenement-container .menu .menu-item a {
@@ -884,9 +886,11 @@ pre {
 }
 .menu-evenement-container .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 40vw;
-  height: 40vh;
-} /* --------------------------------------------- layout */
+  width: 20vw;
+  height: 20vh;
+}
+
+/* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
 
