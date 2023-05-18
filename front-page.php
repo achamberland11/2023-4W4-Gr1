@@ -15,6 +15,10 @@
                     "container_class" => "menu__evenement"));
                     ?>
             </section>
+            <section class="bloc__viewport">
+                <h2>Notre mission</h2>
+                <?php wp_nav_menu(array( "menu"=>"bloc-archive", "container"=>"nav" )); ?>
+            </section>
             <?php if(have_posts()):
                 while (have_posts()): the_post(); 
                 $la_categorie = '4w4';
@@ -24,5 +28,6 @@
                 endwhile; 
             endif; ?>
         </section>
+
     </main>
 <?php get_footer(); ?>
