@@ -853,7 +853,8 @@ pre {
 }
 
 .menu-evenement-container {
-  background-color: crimson;
+  background-color: #333;
+  border: 2px solid crimson;
 }
 .menu-evenement-container .menu {
   display: flex;
@@ -862,7 +863,9 @@ pre {
 .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
-  border: 1px solid aliceblue;
+}
+.menu-evenement-container .menu .menu-item a {
+  color: crimson;
 }
 
 /* --------------------------------------------- layout */

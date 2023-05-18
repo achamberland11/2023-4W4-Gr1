@@ -1,5 +1,6 @@
 .menu-evenement-container {
-    background-color: crimson;
+    background-color: #333;
+    border: 2px solid crimson;
     .menu{
         display: flex;
         justify-content: space-between;
@@ -7,7 +8,10 @@
         .menu-item{
             display: flex;
             flex-direction: column;
-            border: 1px solid aliceblue;
+            
+            a{
+                color: crimson;
+            }
         }
 
     }
