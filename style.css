@@ -591,6 +591,10 @@ pre {
   flex: 1 0 100%;
 }
 
+.bloc__viewport .menu-item {
+  background-color: crimson;
+}
+
 .menu-cours-container {
   display: flex;
   justify-content: center;
