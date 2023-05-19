@@ -859,6 +859,7 @@ pre {
 .menu-evenement-container {
   margin: auto auto;
   border: 2px solid crimson;
+  max-width: 90vw;
 }
 .menu-evenement-container .menu {
   display: block;
