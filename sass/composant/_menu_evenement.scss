@@ -1,12 +1,12 @@
 .menu-evenement-container { //nav 
     margin: auto auto;
     border: 2px solid crimson;
-    width: 25vw;
-    height: 35vh;
 
     .menu { //ul 
         display: block;
         margin: auto auto;
+        display: flex;
+        flex-direction: row;
 
         .menu-item { //li 
             display: flex;
