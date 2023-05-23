@@ -24,6 +24,7 @@
                 align-items: center;
                 text-align: center;
                 color: crimson;
+                background-color: #555;
 
                 .title { 
                     font-size: 1.5rem;
@@ -35,8 +36,10 @@
 
                 .menu-thumbnail {
                     display: block;
-                    width: 20vw;
-                    height: 20vh;
+                    width: auto;
+                    height: auto;
+                    max-width: 20vw;
+                    max-height: 20vh;
                 } 
             } 
         } 

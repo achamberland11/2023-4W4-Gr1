@@ -37,7 +37,9 @@
                 .menu-thumbnail {
                     display: block;
                     width: auto;
-                    height: 12vh;
+                    height: auto;
+                    max-width: 15vw;
+                    max-height: 12vh;
                 } 
             } 
         } 
