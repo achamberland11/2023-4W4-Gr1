@@ -57,6 +57,29 @@ main {
     width: 100%;
 }
 
+.aside__atelier{
+    .menu-atelier-container {
+
+        #menu-atelier { //ul
+    
+            .menu-item { //li
+                height: auto;
+                border: 1px solid aliceblue;
+
+                a {
+                    img {
+                        display: none;
+                    }
+                } 
+            }
+
+            .menu-item:hover {
+                background-color: #555;
+            }
+        } 
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;

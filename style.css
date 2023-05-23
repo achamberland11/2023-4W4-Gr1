@@ -974,6 +974,17 @@ main {
   width: 100%;
 }
 
+.aside__atelier .menu-atelier-container #menu-atelier .menu-item {
+  height: auto;
+  border: 1px solid aliceblue;
+}
+.aside__atelier .menu-atelier-container #menu-atelier .menu-item a img {
+  display: none;
+}
+.aside__atelier .menu-atelier-container #menu-atelier .menu-item:hover {
+  background-color: #555;
+}
+
 main {
   display: flex;
   flex-direction: column;
