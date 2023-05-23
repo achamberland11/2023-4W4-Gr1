@@ -11,6 +11,11 @@
         <h1><?= get_the_title(); ?></h1>
         <?php the_post_thumbnail('medium'); ?>
         <?php the_content();?>
+        <p>Formateur : <?php the_field('formateur'); ?></p>
+        <p>Date de l'atelier : <?php the_field('date_atelier'); ?></p>
+        <p>Heure de l'atelier : <?php the_field('heure_atelier'); ?></p>
+        <p>Durée de l'atelier : <?php the_field('duree'); ?></p>
+        <p>Local de l'atelier : <?php the_field('local'); ?></p>
     <?php endif;?>
     </main><!-- #main -->
     <?php
