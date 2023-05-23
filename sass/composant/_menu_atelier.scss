@@ -1,0 +1,44 @@
+.menu__atelier { //nav 
+    margin: auto auto;
+    border: 2px solid crimson;
+    max-width: 90vw;
+
+    #menu-atelier { //ul 
+        display: block;
+        margin: auto auto;
+        display: flex;
+        flex-direction: row;
+
+        .menu-item { //li 
+            display: flex;
+            flex-direction: column;
+            border: 1px solid aliceblue;
+            width: 20vw;
+            height: 30vh;
+            margin: 0.5rem;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                color: crimson;
+
+                .title { 
+                    font-size: 1.5rem;
+                }
+
+                .description {
+                    font-size: .8rem; 
+                } 
+
+                .menu-thumbnail {
+                    display: block;
+                    width: 20vw;
+                    height: 20vh;
+                } 
+            } 
+        } 
+    } 
+}
