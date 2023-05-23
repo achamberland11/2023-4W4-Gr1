@@ -856,26 +856,24 @@ pre {
   background-color: #292f33;
 }
 
-.menu-evenement-container {
+.menu-page-container {
   margin: auto auto;
   border: 2px solid crimson;
   max-width: 90vw;
 }
-.menu-evenement-container .menu {
+.menu-page-container .menu {
   display: block;
   margin: auto auto;
   display: flex;
   flex-direction: row;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-page-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   border: 1px solid aliceblue;
-  width: 20vw;
-  height: 30vh;
   margin: 0.5rem;
 }
-.menu-evenement-container .menu .menu-item a {
+.menu-page-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -884,58 +882,38 @@ pre {
   color: crimson;
   background-color: #555;
 }
-.menu-evenement-container .menu .menu-item a .title {
+.menu-page-container .menu .menu-item a span {
+  display: none;
+}
+.menu-page-container .menu .menu-item a .title {
   font-size: 1.5rem;
 }
-.menu-evenement-container .menu .menu-item a .description {
+.menu-page-container .menu .menu-item a .description {
   font-size: 0.8rem;
 }
-.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+.menu-page-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: auto;
   height: auto;
+}
+.menu-page-container .menu .menu-item:hover a span {
+  display: block;
+}
+
+.menu-evenement-container .menu .menu-item {
+  width: 20vw;
+  height: 30vh;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail {
   max-width: 20vw;
   max-height: 20vh;
 }
 
-.menu-atelier-container {
-  margin: auto auto;
-  border: 2px solid crimson;
-  max-width: 90vw;
-}
-.menu-atelier-container #menu-atelier {
-  display: block;
-  margin: auto auto;
-  display: flex;
-  flex-direction: row;
-}
 .menu-atelier-container #menu-atelier .menu-item {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid aliceblue;
   width: 15vw;
   height: 20vh;
-  margin: 0.5rem;
-}
-.menu-atelier-container #menu-atelier .menu-item a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  color: crimson;
-  background-color: #555;
-}
-.menu-atelier-container #menu-atelier .menu-item a .title {
-  font-size: 1.5rem;
-}
-.menu-atelier-container #menu-atelier .menu-item a .description {
-  font-size: 0.8rem;
 }
 .menu-atelier-container #menu-atelier .menu-item a .menu-thumbnail {
-  display: block;
-  width: auto;
-  height: auto;
   max-width: 15vw;
   max-height: 12vh;
 }

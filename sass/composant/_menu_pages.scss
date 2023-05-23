@@ -1,0 +1,56 @@
+.menu-page-container {
+    margin: auto auto;
+    border: 2px solid crimson;
+    max-width: 90vw;    
+
+    .menu { //ul 
+        display: block;
+        margin: auto auto;
+        display: flex;
+        flex-direction: row;
+
+        .menu-item { //li 
+            display: flex;
+            flex-direction: column;
+            border: 1px solid aliceblue;
+            margin: 0.5rem;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                color: crimson;
+                background-color: #555;
+
+                span {
+                    display: none;
+                }
+
+
+
+                .title { 
+                    font-size: 1.5rem;
+                }
+
+                .description {
+                    font-size: .8rem; 
+                } 
+
+                .menu-thumbnail {
+                    display: block;
+                    width: auto;
+                    height: auto;
+                } 
+            } 
+        } 
+        .menu-item:hover{
+            a{
+                span{
+                    display: block;
+                }
+            }
+        }
+    } 
+}
