@@ -1,9 +1,25 @@
-# Examen Intra
-## 4W4-Conception d'interfaces et développement Web
-### Auteur : Antoine Chamberland
 
-#### Objectifs
-- Styliser une page 404
+# Épreuve Finale
+ ## 4W4-Conception d'interfaces et développement Web
+ ### Auteur : Antoine Chamberland
+
+ #### Liens de référence
+ - Site sur le serveur Web distant **siteground**
+     - https://cidweb27.sg-host.com/
+   
+##### Objectifs
+- Continuer la version du TP2 et ajouter des modifications en fonction de l'examen finale ;
+    - Produire 5 pages qui présentent des ateliers à venir
+        - Image mise à l'avant
+        - 5 champs personnalisés : formateur, heure, date, local, durée
+        - zone atelier-aside
+    
+- Confectionner un menu pour présenter les pages ateliers
+    - avec animation de survole
+    - menu dans contenir : titre, description, image
+    
+- 5 commits sur epreuve-finale de GitHub
+- Déploiment du site sur SiteGround
 
 
 #### Liens de référence
@@ -19,3 +35,4 @@
 - Pour visualise sur VC installer  **« Markdown preview »**
     - Pour activer `ctrl-shift-v`
 - https://developer.wordpress.org/themes/basics/
+
