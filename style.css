@@ -940,6 +940,16 @@ pre {
   max-height: 12vh;
 }
 
+.tableau-atelier {
+  background-color: aliceblue;
+  width: 45vw;
+  height: auto;
+  font-size: 1.5rem;
+}
+.tableau-atelier tbody {
+  background-color: crimson;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
