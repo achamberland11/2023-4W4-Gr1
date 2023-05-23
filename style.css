@@ -895,6 +895,46 @@ pre {
   height: 20vh;
 }
 
+.menu-atelier-container {
+  margin: auto auto;
+  border: 2px solid crimson;
+  max-width: 90vw;
+}
+.menu-atelier-container #menu-atelier {
+  display: block;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+}
+.menu-atelier-container #menu-atelier .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid aliceblue;
+  width: 15vw;
+  height: 20vh;
+  margin: 0.5rem;
+}
+.menu-atelier-container #menu-atelier .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: crimson;
+  background-color: #555;
+}
+.menu-atelier-container #menu-atelier .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu-atelier-container #menu-atelier .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu-atelier-container #menu-atelier .menu-item a .menu-thumbnail {
+  display: block;
+  width: auto;
+  height: 12vh;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
